@@ -1,12 +1,14 @@
 # casual-markdown-cv
 
-format [resume](https://chocolateacecream.github.io/casual-markdown-cv/resume-web.html) in md and convert it to pdf at the end
+- use github page to host resume as static html page
+- use github action to convert that html page to pdf file and commit to the repo for downloading purpose
 
 ## Usage
 
-just fork [this repo](https://github.com/ChocolateAceCream/casual-markdown-cv), and
+just fork [this repo](https://github.com/ChocolateAceCream/casual-markdown-cv), and edit your resume based on the template, then you can
+1. convert it locally using
 > run npm install
-then your pdf file will be generated under repo folder
+2. push it so github action will convert it then push to repo. Also github page will be updated
 
 
 ## Credit
