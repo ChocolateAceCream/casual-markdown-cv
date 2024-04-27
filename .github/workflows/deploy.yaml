@@ -19,12 +19,13 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - name: Install Dependencies
-      run: npm install
-    - name: Install Puppeteer Dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libx11-xcb1 libxcomposite1 libxcursor1 libxdamage1 libxrandr2 libgbm1 libnss3 libcups2 libasound2 libpangocairo-1.0-0 libatk1.0-0 libatk-bridge2.0-0 libgtk-3-0
+    - uses: actions/checkout@v3
+    - name: Run test
+      uses: tj-actions/puppeteer@v5
+      id: puppeteer
+      with:
+        files: |
+          test/test.js
     - name: Generate PDF version of the resume
       run: npm run convertor
     - name: Commit and Push Generated PDF
