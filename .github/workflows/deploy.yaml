@@ -1,0 +1,33 @@
+name: Deploy VuePress Site to GitHub Pages
+on:
+  push:
+    branches:
+      - main  # Set this to your default branch
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Cache node_modules
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - name: Install Dependencies
+      run: npm install
+    - name: Generate PDF version of the resume
+      run: npm run convertor
+    - name: Commit and Push Generated PDF
+      run: |
+        git config --global user.email "nuodi@hotmail.com"
+        git config --global user.name "ChocolateAceCream"
+        git fetch --unshallow || true
+        git add ./resume.pdf  # Ensure this path is correct
+        git commit -m "Update generated resume PDF [skip ci]"  # [skip ci] to prevent loop
+        git push
