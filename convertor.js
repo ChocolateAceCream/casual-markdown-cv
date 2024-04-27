@@ -8,7 +8,7 @@ async function generatePDF() {
     // Open a new page.
     const page = await browser.newPage();
     // Navigate to the URL.
-  await page.goto('http://localhost:5500/resume-web.html', { waitUntil: 'networkidle0' });
+  await page.goto('https://chocolateacecream.github.io/casual-markdown-cv/resume-web.html', { waitUntil: 'networkidle0' });
     // Generate PDF and save it.
     await page.pdf({
         path: 'resume.pdf', // The file path to save the PDF to.

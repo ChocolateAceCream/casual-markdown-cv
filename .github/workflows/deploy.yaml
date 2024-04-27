@@ -22,7 +22,7 @@ jobs:
     - name: install puppeteer libraries
       run: |
         sudo apt-get update
-        sudo apt-get install -y libgbm1
+        sudo apt-get install -y libgbm1 libxshmfence-dev libgbm-dev
     - name: Generate PDF version of the resume
       run: npm run convertor
     - name: Commit and Push Generated PDF
