@@ -1,88 +1,99 @@
 ﻿<!DOCTYPE html>
 <title>Resume</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.css">
+<link rel="stylesheet" href="./style.css">
 <script src="https://cdn.jsdelivr.net/gh/casualwriter/casual-markdown/dist/casual-markdown.js"></script>
-<style>  
-  body { line-height:1.5; margin:auto; padding:3px; max-width:1024px; display:none; FONT-FAMILY:"SEGOE UI",ARIAL }
-  h1  { font-size:200%; padding:16px; border:1px solid lightgrey; COLOR:WHITE; BACKGROUND: LINEAR-GRADIENT(TO BOTTOM RIGHT, #06C, #FC0) }
-  h2  { border-bottom:1px solid grey; padding:2px; COLOR:TEAL }
+<style>
+  body {
+    line-height: 1.5;
+    margin: auto;
+    padding: 12px 20px;
+    max-width: 1024px;
+    display: none;
+    FONT-FAMILY: "SEGOE UI", ARIAL
+  }
+
+  h1 {
+    font-size: 185%;
+    padding: 16px;
+    border: 1px solid lightgrey;
+    COLOR: WHITE;
+    BACKGROUND: LINEAR-GRADIENT(TO BOTTOM RIGHT, #06C, #FC0)
+  }
 </style>
-<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block'; 
+<body onload="document.body.innerHTML=md.html(document.body.innerHTML); document.body.style.display='block';
               document.getElementById('qrcode').src='https://chart.googleapis.com/chart?cht=qr&chs=177x177&chl='+location.href" >
-<img id=qrcode style="float:right; margin:5px; border:1px solid lightgrey; width:70px" />
+<!-- <img id=qrcode style="float:right; margin:5px; border:1px solid lightgrey; width:70px" /> -->
 <!--======= COPY ABOVE CODE AS HEADER, THEN FOLLOW WITH RESUME CONTENT IN MARKDOWN FORMAT =========-->
 
 <!--<img style="float:right;border-radius:50%;width:70px;padding:6px" src="avatar-man.jpg" />-->
-
-<span style="float:right;padding:6px;color:white"> 
-  dwebber@email.com <br> mobile: +60 12 XXXX XXXX <br>Nationality: American
+<span style="float:right;padding:6px;color:white">
+  nuodi@hotmail.com <br> mobile: 672-551-5678 <br>6033 Gray Ave, Vancouver
 </span>
 
-# David Webber (Senior Web Developer)
+# Di Sheng (Senior Software Engineer)
 
 ## EXECUTIVE SUMMARY
 
-* Senior IT professional with 7 years of experience developing in-house company solutions and customised IT software solutions for external clients, web service API integration and web-based applications; key clients include XXXX and XXXX
-* Well-versed in all stages of software development life cycle, including requirements gathering, design, development, testing and deployment
-* Highly articulate and capable of translating complex ideas into actionable outcomes; meeting business objectives and forging strong relationships with clients, vendors and partners
-* Proactive team builder and tactical planner with ability to attract and secure solid working relationships across organisational levels
+* 6+ years of experience as full-stack developer, proficient in building web apps from scratch
+* Proven expertise across the entire software development lifecycle, from analysis and design to development, testing, and deployment with CI/CD, consistently delivering high-quality results.
+* Passionate about optimizing workflows and enhancing efficiency through the development of innovative tools
+* Skilled in transitioning traditional infrastructure to cloud-based environments, enhancing system scalability and reliability through service discovery, API gateways, and load balancing
+* Solid grasp of Python Data Science tools such as NumPy, TensorFlow, Plotly, and Scikit-learn, along with foundational knowledge of machine learning principles
 
-## TEHNICAL SKILLS
+## TECHNICAL SKILLS
 
-* Languages: Java SE, Java EE, CSharp, HTML5, HTML, CSS
-* Software: NetBeans , Eclipse, Envox CT ADE, ASP.NET
-* Databases: MySQL, Microsoft SQL Server, PostgreSQL Oracle DB
-* Others: Unix (CentOS), AngularJS, Apache Tomcat, IBM WebSphere, Spring Framework
+* Languages and Frameworks: Golang (Gin/Gokit/Gorm), Ruby (Ruby on Rails), JavaScript (Vue2/3), Typescript (Angular5), HTML5, CSS/SASS (Bootstrap/Angular Materials/ElementUI), C, PowerShell, Java (Spring Boot/Spring Cloud), Python3(Numpy/TensorFlow),
+* Software/Cloud Tech: ElasticSearch, Kibana, Logstash, Prometheus, Grafana, Docker, Kubernetes, Helm, Consul, VSCode, Git(Gitlab/Github), Jira, Confluence, AWS, Nginx
+* Databases: MySQL, PostgreSQL, MongoDB
 
-## PROFESSIONAL EXPERIENCE
 
-<span style="float:right;font-weight:700">Nov 2012 - Present</span>
+## WORK EXPERIENCE
+<span style="float:right;font-weight:700; margin-top:20px;">Apr. 2020 - Oct. 2023</span>
 ### SENIOR SOFTWARE ENGINEER
+*CHINA TELECOM, Hangzhou, China*
 
- __ABC TECHNOLOGY COMPANY, Hong Kong__
+**KEY DUTY**
+* Collaborate and built a low-code development platform that decoupled developers from non-technical personnel
+* Developed a GoKit-based microservice to gather and aggregate Kubernetes cluster metrics, pushing the data to OpenTSDB for persistence. I also created a Vue3 and ECharts dashboard for advanced visualization and alert management, enhancing operational decision-making and system management
+* Owning DevOps related tasks in the team, including configuring CI/CD pipelines using GitLab, integrating ELK for logging, and implementing MinIO as S3 storage.
+* Responsible for maintaining frontend of several old projects, including code refactoring, component re-encapsulation, and new features implementation
+* Independently engineered the frontend of the Cloud-WiFi management platform using Vue3 from scratch. This platform serves as the primary interface for configuring and managing IoT devices, facilitating their seamless communication with cloud services
+**HIGHLIGHTS**
+* The low-code platform has been extensively promoted and adopted within the enterprise, with over 100 employees actively using it. Through training, non-technical personnel have created various web apps based on their own needs using a low-code platform. These apps include a business data visualization dashboard for business showcase, a WeChat mini-program for operation and maintenance personnel, and a team-building lottery SPA for HR use
+* Closely engaging with users, providing training and documentation, and collecting user feedback to create requirements planning for the agile development team
+* Owned 3 projects' frontend and supported up to 6 back-end programmers at the same time
 
-* Develop customised IT solutions for clients and enhance existing in-house systems
-* Liaise with clients to conceptualise and plan overall system flow, gather requirements and develop architecture and specifications
-* Handle change requests and documentation, and provide second-level support
+<span style="float:right;font-weight:700">Oct. 2019 - Apr. 2020</span>
+### SOFTWARE ENGINEER
 
- __Selected Projects__
- 
-**IVR System for Company XYZ**
+*RAONI TECHNOLOGIES, Jinan, China*
 
-* Role: Team Leader and Main Developer
-* Liaised with client's IS/marketing/PABX teams, gathered requirements, developed software, performed SIT and UAT and fixed bugs 
-* Analysed and resolved technical issues following system go-live
-* Prepared and reviewed project documentation, including project plans, system specifications, SIT and UAT documents, CR, fault reports
-* Worked closely with client to standardise deployment procedures and deployment documentation
-* Trained client’s IS team to troubleshoot 1st level issues, and provided 2nd level support
+**KEY DUTY**
+* Developed a decoding configuration management platform that integrated with China Telecom IoT Cloud, implemented microservices to provided functionalities such as decode package uploading and configuration management
+* Worked with Academy Li-Ren Zhang on a digital modeling project. Modeled data collected from sensors embedded in hospital logistics equipment, generated reports on equipment workload and health status evaluation, and provided maintenance suggestions
+**HIGHLIGHTS**
+* Visited Malaysia on behalf of Han-Dan Chamber of Commerce as a technical representative to provide technical support and translation services
 
-**Online Customer Portal for Company 123**
+<span style="float:right;font-weight:700">Aug.2016 - May 2019</span>
+### SOFTWARE ENGINEER
 
-* Role: Team leader and main developer
-* Conducted entire SDLC in collaboration with client, and followed through with documentation, SIT and UAT
+*ZEBRA TECHNOLOGIES, Long Island, US*
 
-<span style="float:right;font-weight:700">Jan 2010 - Jan 2012</span>
-### WEB DEVELOPER
+**KEY DUTY**
+* Customizing and maintaining an Android app to meet the new testing requirements with Android Studio
+* Generated an automated reporting system using Ruby script and JIRA REST APIs
+* Collaborated with Electrical Engineer and Mechanical Engineer to build automation testing fixtures utilizing Raspberry Pi GPIO and real-time result data visualization dashboard with Ruby on Rails and AngularJS
+* Proficient in generating various documentation such as traceability matrix, status reports, and README files
+**HIGHLIGHTS**
+* The automation testing fixtures reduce the workload of manual testers by 35%
 
-__WORLWIDE XYZ TECHNOLOGIES, Hong Kong__
+## EDUCATIONAL
 
-* Analysed customer requirements and created roll out strategy for project delivery
-* Web developer specializing on CSS development and CSharp programming with ASP.NET
-* Custom designed solutions using SQL Server 2010 platform
-
-## EDUCATIONAL & QUALIFICATIONS
-
-* Master of Information Systems, Hong Kong University
-* Bachelor’s Degree (Honours) First Class, Computer Science, University of Hong Kong
-* Sun Certified Programmer for Java 2 Platform, SE 5.0 (SCJP 5.0)
-* Big Data and Hadoop Certification, Simplilearn, In Progress
+* Master of Computer Science, New York Institute of Technology (GPA 4.0/4.0)
+* Bachelor of Chemical Engineering, University of Toronto
 
 ## MISC. INFORMATION
 
-* Languages: Fluent in English and Cantonese
-* Availability: 2 months’ notice
-* References available upon request
-
-
-ps: reference CV sample from https://www.resumewriter.hk/blog/web-developer-cv-sample/
+* Languages: Fluent in English and Mandarin
+* Github: https://github.com/ChocolateAceCream
