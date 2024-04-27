@@ -1,6 +1,6 @@
 # casual-markdown-cv
 
-- use github page to host resume as static html page
+- use github page to host [resume](https://chocolateacecream.github.io/casual-markdown-cv/resume-web.html)  as static html page
 - use github action to convert that html page to pdf file and commit to the repo for downloading purpose
 
 ## Usage
