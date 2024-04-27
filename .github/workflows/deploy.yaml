@@ -19,13 +19,10 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - uses: actions/checkout@v3
-    - name: Run test
-      uses: tj-actions/puppeteer@v5
-      id: puppeteer
-      with:
-        files: |
-          test/test.js
+    - name: install puppeteer libraries
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgbm1
     - name: Generate PDF version of the resume
       run: npm run convertor
     - name: Commit and Push Generated PDF
