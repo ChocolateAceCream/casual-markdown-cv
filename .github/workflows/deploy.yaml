@@ -19,12 +19,17 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
-    - name: install puppeteer libraries
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y libgbm1 libxshmfence-dev libgbm-dev
-    - name: Generate PDF version of the resume
-      run: npm run convertor
+    - name: run converter
+      uses: ./
+      id: puppeteer-test
+      with:
+        files: ./convertor.js  # The test generates a test.pdf file in the home directory the steps below are used to verify the contents of the pdf file.
+    - name: Copy convertor output
+      uses: tj-actions/docker-cp@v2
+      with:
+        container: ${{ steps.puppeteer-test.outputs.container-id }}
+        source: ${{ steps.puppeteer-test.outputs.home }}/resume.pdf  # <-- Replace this input if copied or Remove this step
+        destination: resume.pdf  # <-- Replace this input if copied or Remove this step
     - name: Commit and Push Generated PDF
       run: |
         git config --global user.email "nuodi@hotmail.com"
