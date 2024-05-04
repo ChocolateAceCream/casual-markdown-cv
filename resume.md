@@ -1,10 +1,10 @@
 <img style="float:right;border-radius:50%;width:70px;padding:6px" src="avatar-man.jpg" />
 
-<span style="float:right;padding:6px"> 
+<span style="float:right;padding:6px">
   someone@email.com <br> mobile: +852 xxxxxxxx <br> Nationality: Chinese
 </span>
 
-# Casualwriter  
+# Casualwriter
 
 ## Executive Summary
 
@@ -15,12 +15,12 @@
 
 ## Working Experience
 
-#### Current Company (Project Manager, 2015/08 - present) 
+#### Current Company (Project Manager, 2015/08 - present)
 
 * Lead team of 10 to oversee conception, requirement gathering, documentation and rollout.
 * Conduct troubleshooting, analysis and support. Gather user feedback, document bugs and change requests.
 
-#### Second Company (System Analyst, 2011/06 - 2015/07) 
+#### Second Company (System Analyst, 2011/06 - 2015/07)
 
 * Led team of 5 for application development
 * Coordinated with developers, support staff and vendors across Hong Kong, China, Taiwan
@@ -29,7 +29,7 @@
 
 * Develop multiple applications using Javascript, Java, PHP, Powerbuilder, Oracle
 
-## Projects: 
+## Projects:
 
 * [Casual-Markdown](https://github.com/casualwriter/powerpage) - a lightweight markdown parser
 * [Powerpage](https://github.com/casualwriter/powerpage) - a lightweight browser for html applications
@@ -44,5 +44,5 @@
 
 ## Misc. Information
 
+* Personal Knowledge Base: [https://chocolateacecream.github.io/vuepress-blog/](https://chocolateacecream.github.io/vuepress-blog/)
 * Languages: English (good), Cantonese (fluent/native), Mandarin (good)
-* Availability: 1 month's notice
