@@ -3,6 +3,7 @@
     "puppeteer": "^22.7.1"
   },
   "scripts": {
-    "convertor": "node convertor.js"
+    "convertor": "node convertor.js",
+    "build": "node local-convertor.js"
   }
 }
