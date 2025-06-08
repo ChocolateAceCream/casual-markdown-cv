@@ -1,20 +1,32 @@
+body {
+  margin: auto;
+  max-width: 1024px;
+  display: none;
+  FONT-FAMILY: "SEGOE UI", ARIAL
+}
+
+h1 {
+  font-size: 155%;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  COLOR: WHITE;
+  BACKGROUND: LINEAR-GRADIENT(TO BOTTOM RIGHT, #002D62,rgb(2, 60, 127))
+}
+
 em{
   margin-top: -20px;
   display: block;
 }
-b {
-  margin-bottom: -18px;
-  display: block;
-}
+
 h2 {
-  margin-bottom: -18px;
+  margin-bottom: 10px;
   border-bottom: 1px solid grey;
   padding: 2px;
-  COLOR: TEAL
+  color: #002D62;
 }
 .markdown code {
   background: #f0f0f0;
-  color: navy;
+  color: #002D62;
   border-radius: 6px;
   padding: 2px;
 }
@@ -42,26 +54,6 @@ h2 {
   background: #f0f0f0;
   border-left: 6px solid grey;
   padding: 8px
-}
-
-.markdown table {
-  margin: 12px;
-  border-collapse: collapse;
-}
-
-.markdown th {
-  border: 1px solid grey;
-  background: lightgrey;
-  padding: 6px;
-}
-
-.markdown td {
-  border: 1px solid grey;
-  padding: 6px;
-}
-
-.markdown tr:nth-child(even) {
-  background: #f0f0f0;
 }
 
 .markdown ins {
@@ -108,4 +100,41 @@ h2 {
 
 .toc li:hover {
   background: #f0f0f0
+}
+
+.markdown {
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+
+  th {
+    text-align: left;
+  }
+  th:first-child {
+    text-align: left;
+    width: 70%;
+  }
+
+  th:last-child {
+    text-align: right;
+    width: 30%;
+  }
+
+  td {
+    vertical-align: top;
+    white-space: pre-wrap;
+  }
+
+  td:first-child {
+    text-align: left;
+    width: 50%;
+  }
+
+  td:last-child {
+    text-align: right;
+    width: 50%;
+  }
+
 }

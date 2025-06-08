@@ -19,7 +19,13 @@ async function generatePDF() {
   await page.pdf({
     path: filename, // The file path to save the PDF to.
     format: 'A4',       // Specify the format of the PDF.
-    printBackground: true // Ensures that the background styles are also printed.
+    printBackground: true, // Ensures that the background styles are also printed.
+    margin: {
+      top: '40px',    // 为页眉留出空间
+      bottom: '40px', // 为页脚留出空间
+      left: '40px',
+      right: '40px'
+    }
   });
   // Close the browser session.
   await browser.close();
