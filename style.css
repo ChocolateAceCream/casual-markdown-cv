@@ -19,9 +19,10 @@ em{
 }
 
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   border-bottom: 1px solid grey;
   padding: 2px;
+  font-size: 20px;
   color: #002D62;
 }
 .markdown code {
@@ -107,6 +108,11 @@ h2 {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
+    margin-bottom:-16px;
+  }
+
+  tbody {
+    margin-top:-4px;
   }
 
   th {

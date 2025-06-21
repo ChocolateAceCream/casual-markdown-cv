@@ -8,7 +8,7 @@ async function generatePDF() {
     // Open a new page.
     const page = await browser.newPage();
     // Navigate to the URL.
-  await page.goto('http://127.0.0.1:5500/resume-web.html', { waitUntil: 'networkidle0' });
+  await page.goto('http://127.0.0.1:5501/resume-web.html', { waitUntil: 'networkidle0' });
   // Generate PDF and save it.
   const currentDate = new Date();
   const year = currentDate.getFullYear();

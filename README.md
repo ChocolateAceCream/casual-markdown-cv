@@ -1,3 +1,11 @@
+点开resume-web.html
+右键单击，open with live server
+
+按住ctrl+shift+`
+输入npm run build  回车
+
+
+
 # casual-markdown-cv
 
 - use github page to host [resume](https://chocolateacecream.github.io/casual-markdown-cv/resume-web.html)  as static html page

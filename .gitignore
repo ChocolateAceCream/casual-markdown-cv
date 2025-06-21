@@ -1,2 +1,12 @@
 node_modules/*
 node_modules/.bin/*
+node_modules/.package-lock.json
+node_modules/.bin/browsers
+node_modules/.bin/escodegen
+node_modules/.bin/esgenerate
+node_modules/.bin/esparse
+node_modules/.bin/esvalidate
+node_modules/.bin/extract-zip
+node_modules/.bin/js-yaml
+node_modules/.bin/puppeteer
+node_modules/.bin/semver
